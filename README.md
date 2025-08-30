@@ -18,16 +18,16 @@ The goal is to build and compare classifiers to identify which performs best at 
 
 ## 📂 Project Structure
 codes/
-│-- Decision_Tree_classification.ipynb # Decision Tree Classifier
-│-- KNN.ipynb # KNN Classifier
-│-- Logistic_Regression.ipynb # Logistic Regression Classifier
-│-- Naive_Bayes.ipynb # Naïve Bayes Classifier
-│-- SVM.ipynb # Support Vector Machine Classifier
-
-Final Result/
-|--KNN.ipynb #KNN classifier
-
-
+    Analysis/
+            |-- Analysis.ipynb
+    Code_Models/
+            │-- Decision_Tree_classification.ipynb # Decision Tree Classifier
+            │-- KNN.ipynb # KNN Classifier
+            │-- Logistic_Regression.ipynb # Logistic Regression Classifier
+            │-- Naive_Bayes.ipynb # Naïve Bayes Classifier
+            │-- SVM.ipynb # Support Vector Machine Classifier
+      Final Result/
+            |--KNN.ipynb #KNN classifier
 ---
 
 ## 📊 Dataset
@@ -64,6 +64,19 @@ pip install -r requirements.txt
 
 🔮 Future Improvements
 
-1.Try ensemble learning (Random Forest, XGBoost, LightGBM).
+🔮 Future Improvements
 
-2.Deploy the best model with Flask/Django or as an API.
+1.Advanced Ensemble Methods
+    Implement Random Forest, XGBoost, LightGBM, or CatBoost to improve predictive power beyond basic classifiers.
+
+2.Hyperparameter Optimization
+    UseBayesian Optimization for tuning models (especially KNN, SVM, and Decision Tree) for better accuracy and generalization.
+
+3.Model Deployment
+    Deploy the model as an API using Flask/FastAPI/Django.
+
+4.Real-Time Detection System
+    Integrate the model with streaming tools (Apache Kafka, Spark Streaming) to detect frauds instantly as transactions happen.
+
+5.Continuous Learning System
+    Set up a pipeline where the model re-trains periodically with new transaction data to adapt to changing fraud patterns.
